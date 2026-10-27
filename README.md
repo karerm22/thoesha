@@ -1,36 +1,26 @@
-# Kareem — Personal Finance & Savings
+# Kareem — مدير فلوسك
 
-A responsive Arabic RTL personal finance dashboard with a daily savings journal. Static HTML/CSS/JavaScript; no framework, no API key, no server required.
+واجهة عربية RTL لإدارة الدخل والمصروفات وأهداف التحويش، مبنية باستخدام HTML وCSS وJavaScript فقط.
 
-## Features
-- Editable personal display name (starts as Kareem).
-- Daily income, expenses, net balance, multiple income sources and custom categories.
-- Savings goals with target amount, deadline, amount already saved, progress percentage, and daily amount needed.
-- Daily savings deposits per goal with date and note; savings journal and deposit deletion that adjusts the goal balance.
-- Recent transactions, searchable and filterable transaction history.
-- Weekly cash-flow chart, six-month chart, monthly category breakdown, custom date range report.
-- Local browser storage, JSON export/import backup, responsive dark UI.
-- All UI is in Arabic and RTL; values shown in EGP.
+## المميزات
+- لوحة نظرة عامة وملخص الدخل والمصروفات اليومية.
+- تسجيل الحركات المالية والبحث والتصفية حسب النوع والشهر.
+- إنشاء أهداف تحويش ومتابعة التقدم وسجل الإيداعات.
+- تحليلات شهرية ورسوم بيانية وتقارير حسب فترة تختارها.
+- حفظ محلي داخل المتصفح، مع تصدير واستيراد نسخة احتياطية بصيغة JSON.
+- تصميم داكن متجاوب مع الشاشات الكبيرة واللابتوب والتابلت والموبايل.
 
-## Run locally
-Open `index.html` in a modern browser, or run:
-```bash
-python -m http.server 8000
-```
-Then visit `http://localhost:8000`.
+## التشغيل محليًا
+افتح `index.html` في المتصفح. لا يحتاج المشروع إلى تثبيت حزم أو تشغيل خادم.
 
-## Publish on GitHub Pages
-1. Create a public GitHub repository, e.g. `kareem-finance`.
-2. Upload the contents of this folder into the repository root (`index.html`, `style.css`, `app.js`, `favicon.svg`, `README.md`).
-3. Open **Settings → Pages**.
-4. Choose **Deploy from a branch**, branch `main`, folder `/(root)`, then **Save**.
-5. Wait for deployment; the URL will look like `https://YOUR-USERNAME.github.io/kareem-finance/`.
+## النشر على GitHub Pages
+1. أنشئ مستودعًا جديدًا على GitHub.
+2. ارفع الملفات الثلاثة: `index.html` و`style.css` و`app.js`.
+3. من **Settings → Pages** اختر النشر من الفرع `main` والمجلد `/ (root)`.
+4. احفظ الإعدادات وانتظر حتى يظهر رابط الموقع.
 
-## Important storage note
-The app stores data in the browser's `localStorage` on the current device/browser. It does not sync across devices. Export a JSON backup regularly from **الإعدادات والبيانات**. Clearing browser data or using private browsing may remove the stored data. Do not enter bank card numbers, passwords, or other sensitive information.
+## تنبيه مهم عن البيانات
+البيانات تُحفظ في `localStorage` على نفس المتصفح والجهاز. النشر على GitHub Pages لا ينقل بياناتك بين الأجهزة ولا يوفر مزامنة سحابية. صدّر نسخة JSON من صفحة الإعدادات بانتظام. لا ترفع أي نسخة احتياطية تحتوي على بياناتك الشخصية إلى مستودع عام.
 
-## Files
-- `index.html`: page structure and dialogs
-- `style.css`: responsive dark design
-- `app.js`: calculations, savings journal, reports, and local persistence
-- `favicon.svg`: app icon
+## ملاحظة تطوير
+هذا الإصدار يركز على تحسين الواجهة والتجاوب مع الحفاظ على منطق التطبيق ومفتاح التخزين المحلي الحالي، لتقليل مخاطر فقدان البيانات القديمة.
